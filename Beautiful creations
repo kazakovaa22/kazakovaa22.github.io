@@ -2,14 +2,12 @@
 <head><title>Gallery</title>
 </head>
    <body>
-<p>Kazakova Oleksandra<br>-
 <h1>«Animals that change skin color»</h1>
 <h2>Beautiful creations</h2>
-<p><i>24.02.2025</i></p>
-<img src="https://en.m.wikipedia.org/wiki/Indian_chameleon" alt=Indian chameleon">
-<img src="https://www.reptiles.swelluk.com/help-guides/how-to-look-after-a-panther-chameleon/" alt=Panther chameleon">
-<img src="https://angelfishaquatics.co.uk/yemen-chameleon-chamaeleo-calyptratus-2887-p.as" alt=Yemen chameleon">
-<img src="https://en.m.wikipedia.org/wiki/Veiled_chameleon" alt=Veiled chameleon">
+<img src="IMG_8461.JPG" alt=Indian chameleon"/>
+<img src="https://www.reptiles.swelluk.com/help-guides/how-to-look-after-a-panther-chameleon/" alt=Panther chameleon"/>
+<img src="https://angelfishaquatics.co.uk/yemen-chameleon-chamaeleo-calyptratus-2887-p.as" alt=Yemen chameleon"/>
+<img src="https://en.m.wikipedia.org/wiki/Veiled_chameleon" alt=Veiled chameleon"/>
   <p> <a href="index.html">main page</a></p>
 </body>
 </html>
