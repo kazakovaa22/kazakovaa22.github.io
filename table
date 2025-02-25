@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблиця</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Дані</caption>
+        <tr>
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+            <th>Колонка 3</th>
+        </tr>
+        <tr>
+            <td>Дані 1</td>
+            <td>Дані 2</td>
+            <td>Дані 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Об'єднані комірки</td>
+            <td>Дані 4</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>Це таблиця з даними.</li>
+        <li>В останньому рядку є об'єднані комірки.</li>
+        <li>Це простий HTML-код.</li>
+    </ul>
+
+</body>
+</html>
