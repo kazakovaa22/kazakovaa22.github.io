@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <h1>Name: Oleksandra Kazakova</h1>
+      <h2>Puzzle: Butterflies</h2>
+    </header>
+
+    <main class="puzzle-container">
+      <div class="flex-container">
+        <!-- Puzzle pieces -->
+        <img src="images/puzzle1_A.jpg" alt="Puzzle A">
+        <img src="images/puzzle1_B.jpg" alt="Puzzle B">
+        <img src="images/puzzle1_C.jpg" alt="Puzzle C">
+        <img src="images/puzzle1_D.jpg" alt="Puzzle D">
+        <img src="images/puzzle1_E.jpg" alt="Puzzle E">
+        <img src="images/puzzle1_F.jpg" alt="Puzzle F">
+        <img src="images/puzzle1_G.jpg" alt="Puzzle G">
+        <img src="images/puzzle1_H.jpg" alt="Puzzle H">
+        <img src="images/puzzle1_I.jpg" alt="Puzzle I">
+        <img src="images/puzzle1_J.jpg" alt="Puzzle J">
+        <img src="images/puzzle1_K.jpg" alt="Puzzle K">
+        <img src="images/puzzle1_L.jpg" alt="Puzzle L">
+        <img src="images/puzzle1_M.jpg" alt="Puzzle M">
+        <img src="images/puzzle1_N.jpg" alt="Puzzle N">
+        <img src="images/puzzle1_O.jpg" alt="Puzzle O">
+        <img src="images/puzzle1_P.jpg" alt="Puzzle P">
+        <img src="images/puzzle1_Q.jpg" alt="Wrong piece" class="hidden">
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Completed on: April 10, 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header, .footer {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.flex-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
