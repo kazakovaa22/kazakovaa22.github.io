@@ -1,0 +1,80 @@
+/* Сброс стилей */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+header {
+  grid-area: header;
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 20px;
+  color: #007acc;
+}
+
+.puzzle-container {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  min-height: 400px;
+}
+
+.puzzle-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.puzzle-container img:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  padding: 10px;
+}
