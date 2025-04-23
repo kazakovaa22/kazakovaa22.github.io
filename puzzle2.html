@@ -1,61 +1,74 @@
 <!doctype html>
 
 <html>
-
 <head>
-
-<title>Butterfly</title>
-  <div>Oleksanda Kazakova</div>
-   <div>21.04.2025</div>
-
-<style>
-
-.containerl {
-
-display:flex:
-
-flex-directionirow:
-
-align-items:flex-start
-
-align-content:flex-start:
-
-}
-
-.flex-item {
-
-display: flex;
-
-flex-directionizow:
-
-align-itemsiflex start
-
-align-content:flex-start;
-
-}
-
-</style>
-
+   <title>Butterfly</title>
+   <style>
+      .info-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 10px;
+         padding: 20px;
+         background-color: #f0f0f0;
+         font-family: Arial, sans-serif;
+         max-width: 600px;
+         margin: 0 auto;
+      }
+      .info-grid div {
+         background: #ffffff;
+         padding: 10px;
+         border: 1px solid #ccc;
+         text-align: center;
+         border-radius: 5px;
+      }
+      .container1, .container2 {
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         align-content: flex-start;
+         flex-wrap: wrap;
+      }
+      .flex-item {
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         align-content: flex-start;
+         margin: 5px;
+      }
+   </style>
 </head>
 
 <body>
+<div class="info-grid">
+    <div>Oleksanda Kazakova</div>
+    <div>Butterfly</div>
+    <div>18.04.2025</div>
 
-<div class="container1">
+    <div class="container1">
+        <div class="flex-item"><img src="enigma/puzzle1_A.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_B.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_C.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_D.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_E.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_F.jpg"></div>
+    </div>
 
-<div class="flex-item"><img src="puzzle1_A.jpg"></div>
+    <div class="container2">
+        <div class="flex-item"><img src="enigma/puzzle1_G.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_H.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_I.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_J.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_K.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_L.jpg"></div>
+    </div>
 
-</div>
-
-<div class="container1">
-
-<div class="flex-item"><img src="puzzle1_B.jpg"></div>
-
-</div>
-
-<div class="container1">
-
-<div class="flex-item"><img src="puzzle1_C.jpg"></div>
-
+    <div class="container3">
+        <div class="flex-item"><img src="enigma/puzzle1_M.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_N.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_O.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_P.jpg"></div>
+        <div class="flex-item"><img src="enigma/puzzle1_Q.jpg"></div>
+    </div>
 </div>
 </body>
 </html>
