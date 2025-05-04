@@ -39,4 +39,86 @@
       transform: scale(1.05);
     }
 
-    /* Penguins — овальная рамка*
+    /* Penguins — овальная рамка + мягкий фильтр */
+    .penguins {
+      border-radius: 50% / 40%;
+    }
+    .penguins img {
+      -webkit-filter: sepia(20%) brightness(105%) saturate(120%);
+      filter: sepia(20%) brightness(105%) saturate(120%);
+    }
+
+    /* Football Field — рамка с точками */
+    .football {
+      border: 20px dotted black;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    /* Dinosaur — ярко-синий */
+    .dino img {
+      -webkit-filter: hue-rotate(200deg) saturate(180%);
+      filter: hue-rotate(200deg) saturate(180%);
+    }
+
+    /* Seagull — градиентный фон */
+    .seagull {
+      background: linear-gradient(to top, #ffffff, #99ccff);
+    }
+
+    /* Butterfly — рамка с выемками по бокам */
+    .butterfly {
+      background: #f3eaff;
+      border-radius: 50% / 20%;
+      box-shadow:
+        inset 0 0 30px rgba(150, 150, 255, 0.5),
+        0 0 10px rgba(120, 120, 255, 0.3);
+      border: 4px solid white;
+      padding: 8px;
+    }
+    .butterfly img {
+      -webkit-filter: hue-rotate(190deg) saturate(150%);
+      filter: hue-rotate(190deg) saturate(150%);
+    }
+
+    /* Theater stage — размытый фон и текст */
+    .stage img {
+      filter: blur(2px);
+    }
+    .stage-text {
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-box penguins">
+    <img src="penguins.jpg" alt="Penguins">
+  </div>
+
+  <div class="image-box football">
+    <img src="football_field.jpg" alt="Football Field">
+  </div>
+
+  <div class="image-box dino">
+    <img src="dinosaur.png" alt="Dinosaur">
+  </div>
+
+  <div class="image-box seagull">
+    <img src="seagull.png" alt="Seagull">
+  </div>
+
+  <div class="image-box butterfly">
+    <img src="butterfly.jpg" alt="Butterfly">
+  </div>
+
+  <div class="image-box stage">
+    <div class="stage-text">Presenting</div>
+    <img src="theater_stage.jpg" alt="Stage">
+  </div>
+</body>
+</html>
