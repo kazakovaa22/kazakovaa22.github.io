@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Review Cards</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eeeeee;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3399ff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 200px;
+      height: 140px;
+      background-color: #ffffff;
+      border: 2px solid #888;
+      border-radius: 12px;
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .question {
+      display: block;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .answer {
+      display: none;
+      background-color: #d4f0ff;
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 8px;
+      color: #222;
+    }
+
+    .card:hover .answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Review Cards</h1>
+
+  <div class="container">
+    <div class="card">
+      <div class="question">What is HTML?</div>
+      <div class="answer">HyperText Markup Language</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What does CSS do?</div>
+      <div class="answer">It styles the page</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What is JavaScript used for?</div>
+      <div class="answer">To make pages interactive</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What is a function?</div>
+      <div class="answer">It does a specific job in code</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What does a &lt;div&gt; do?</div>
+      <div class="answer">It groups elements</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What is a variable?</div>
+      <div class="answer">It stores a value</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What is the DOM?</div>
+      <div class="answer">It represents the page structure</div>
+    </div>
+
+    <div class="card">
+      <div class="question">What is a CSS class?</div>
+      <div class="answer">A style you can use more than once</div>
+    </div>
+  </div>
+</body>
+</html>
