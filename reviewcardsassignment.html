@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Review Cards</title>
+  <title>Review Cards</title>
   <style>
     body {
       font-family: sans-serif;
@@ -11,12 +11,14 @@
     h1 {
       text-align: center;
       color: #3399ff;
+      animation: fadeIn 1s ease-in;
     }
 
     .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      animation: fadeInUp 1s ease-in;
     }
 
     .card {
@@ -28,11 +30,23 @@
       margin: 10px;
       padding: 10px;
       position: relative;
-      transition: transform 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInCard 0.8s forwards;
     }
 
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(6) { animation-delay: 0.6s; }
+    .card:nth-child(7) { animation-delay: 0.7s; }
+    .card:nth-child(8) { animation-delay: 0.8s; }
+
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .question {
@@ -52,52 +66,48 @@
 
     .card:hover .answer {
       display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeInCard {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+   fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <h1>Review Cards</h1>
-
   <div class="container">
-    <div class="card">
-      <div class="question">What is HTML?</div>
-      <div class="answer">HyperText Markup Language</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What does CSS do?</div>
-      <div class="answer">It styles the page</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What is JavaScript used for?</div>
-      <div class="answer">To make pages interactive</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What is a function?</div>
-      <div class="answer">It does a specific job in code</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What does a &lt;div&gt; do?</div>
-      <div class="answer">It groups elements</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What is a variable?</div>
-      <div class="answer">It stores a value</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What is the DOM?</div>
-      <div class="answer">It represents the page structure</div>
-    </div>
-
-    <div class="card">
-      <div class="question">What is a CSS class?</div>
-      <div class="answer">A style you can use more than once</div>
-    </div>
+    <div class="card"><div class="question">What is HTML?</div><div class="answer">HyperText Markup Language</div></div>
+    <div class="card"><div class="question">What does CSS do?</div><div class="answer">It styles the page</div></div>
+    <div class="card"><div class="question">What is JavaScript used for?</div><div class="answer">To make pages interactive</div></div>
+    <div class="card"><div class="question">What is a function?</div><div class="answer">It does a specific job in code</div></div>
+    <div class="card"><div class="question">What does a &lt;div&gt; do?</div><div class="answer">It groups elements</div></div>
+    <div class="card"><div class="question">What is a variable?</div><div class="answer">It stores a value</div></div>
+    <div class="card"><div class="question">What is the DOM?</div><div class="answer">It represents the page structure</div></div>
+    <div class="card"><div class="question">What is a CSS class?</div><div class="answer">A style you can use more than once</div></div>
   </div>
 </body>
 </html>
