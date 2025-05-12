@@ -35,11 +35,12 @@
       position: relative;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       opacity: 0;
-      animation: fadeInCard 0.8s forwards;
+      /* Указываем только имя анимации и длительность, остальное задаём по отдельности */
+      animation-name: fadeInCard;
+      animation-duration: 0.8s;
       animation-fill-mode: forwards;
     }
 
-    /* Задержка для появления карточек по очереди */
     .card:nth-child(1) { animation-delay: 0.1s; }
     .card:nth-child(2) { animation-delay: 0.2s; }
     .card:nth-child(3) { animation-delay: 0.3s; }
@@ -140,3 +141,4 @@
   </div>
 </body>
 </html>
+
