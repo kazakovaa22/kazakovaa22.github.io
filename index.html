@@ -1,50 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>How to Embed a Video</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wildlife Photography — a site about the hobby, gear, tips, and visual inspiration for beginner photographers." />
+  <link rel="stylesheet" href="style.css" />
+  <title>Wildlife Photography</title>
 </head>
 <body>
-  <div class="container">
-    <h1>How to Embed a Video into a Web Page</h1>
-
-    <section class="step">
-      <h2>Step 1: Find a Video</h2>
-      <p>Open YouTube and find the video you want to embed.</p>
-      <img src="step1.png" alt="YouTube video page">
+  <header>
+    <h1>Wildlife Photography</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="equipment.html">Gear</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>Explore the world of wildlife through the lens of a camera.</p>
+      <figure>
+        <img src="images/welcome.jpg" alt="Forest landscape" />
+        <figcaption>A peaceful forest — nature at its best.</figcaption>
+      </figure>
     </section>
-
-    <section class="step">
-      <h2>Step 2: Click the Share Button</h2>
-      <p>Below the video, click the "Share" button.</p>
-      <img src="step2.png" alt="Share button">
-    </section>
-
-    <section class="step">
-      <h2>Step 3: Choose 'Embed'</h2>
-      <p>From the options that appear, select "Embed".</p>
-      <img src="step3.png" alt="Embed option">
-    </section>
-
-    <section class="step">
-      <h2>Step 4: Copy the Embed Code</h2>
-      <p>Copy the code provided in the embed box.</p>
-      <img src="step4.png" alt="Embed code box">
-    </section>
-
-    <section class="step">
-      <h2>Step 5: Paste the Code into HTML</h2>
-      <p>Paste the code into the desired spot in your HTML page.</p>
-      <img src="step5.png" alt="Pasting embed code into HTML">
-    </section>
-
-    <section class="step">
-      <h2>Final Result</h2>
-      <p>This is how your embedded video will appear:</p>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="Learn HTML in 12 Minutes" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Wildlife Photography</p>
+  </footer>
 </body>
 </html>
