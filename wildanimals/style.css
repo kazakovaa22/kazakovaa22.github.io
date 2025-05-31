@@ -55,7 +55,28 @@ iframe {
   max-width: 560px;
   height: 315px;
   display: block;
-  margin: 20px auto; /* відцентровує */
+  margin: 20px auto; 
   border-radius: 10px;
 }
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.gallery-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
 
