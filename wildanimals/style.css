@@ -49,3 +49,13 @@ img {
   height: auto;
   border-radius: 10px;
 }
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  display: block;
+  margin: 20px auto; /* відцентровує */
+  border-radius: 10px;
+}
+
